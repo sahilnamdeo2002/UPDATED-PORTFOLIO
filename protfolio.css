@@ -1,0 +1,1028 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins',sans-serif;
+}
+
+
+#skills {
+    padding: 50px 0;
+    background-image: url(./images/last.png.png);
+}
+
+
+body{
+    color: white;
+    background: #081b29;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px,10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    /* opacity: 0; */
+    animation: slideRight is ease forwards;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8); /* White color with transparency */
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar a:hover {
+    color: rgb(15, 152, 221);; /* Hover color with transparency */
+
+  }
+
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(15, 152, 221);; /* Underline color with transparency */
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar a.active {
+    color: rgb(15, 152, 221);
+}
+
+
+
+
+  
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./images/background.png.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px  20% 0;
+}
+.homecontent{
+    max-width: 1000px;
+}
+.homecontent h3{
+    font-size: 32px;
+    font-weight: 700;
+    /* opacity: 0; */
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.homecontent h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.homecontent h3 span{
+color: #0ef;
+}
+.homecontent h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    /* opacity: 0; */
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+}
+.homecontent p {
+    font-size: 20px;
+    /* opacity: 0; */
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s ;
+}
+.homescience a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: .5s ease;
+    /* opacity: 0; */
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 15px 30px 0;
+ 
+}
+.homescience a:hover{
+    background: #0ef;
+    color: black;
+    box-shadow: 0 0 20px #0ef;
+}
+.btnbox{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    /* opacity: 0; */
+    animation: slideTop is ease forwards;
+    animation-delay:2s;
+    box-shadow: 0 0 5px #0ef;
+
+}
+.btnbox:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan , 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan ;
+}
+.about{
+    /* color: red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 1.5rem;
+    /* padding-bottom: 6rem; */
+}
+.aboutimg img{
+    padding: 20%;
+    max-width: 700px;
+    height: auto;
+    width: 100%;
+    border-radius:8px ;
+}
+.abouttext h2{
+    font-size: 60px;
+    color: #0ef;
+}
+.abouttext h2 span{
+    color: #0ef;
+}
+.abouttext p{
+    color: #fff;
+    font-size:20px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    margin-bottom: 4rem;
+}
+.abouttext h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.container{
+    padding: 90px;
+}
+#service{
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.subtitle span{
+  color: #0ef;
+
+}
+.subtitle{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.servicetitle{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.servicetitle div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background ,0.5s,transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+                1px 1px 40px #0053b8f7;
+}
+.servicetitle div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.servicetitle div h2{
+    font-size:50px;
+    font-weight:500;
+    margin-bottom: 15px;
+
+}
+.servicetitle div a{
+    text-decoration: none;
+    color: #00000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read{
+ display: inline-block;
+ padding: 12px 28px;
+ background: #0ef;
+ border-radius: 40px;
+ font-size: 16px;
+ color: black;
+ letter-spacing: 1px;
+ text-decoration: none;
+ font-weight: 600;
+ /* opacity: 0; */
+ animation: slideTop 1s ease forwards;
+ animation-delay: 2s;
+ box-shadow: 0 0 50px #0ef, 
+ 0 0 25px #0ef
+
+}
+.read:hover{
+    /* background: #0ef;
+    color: black; */
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan , 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan ;
+}
+.servicetitle div:hover{
+    transform: translateY(-10px);
+    color: #0ef;
+}
+
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* -------------------- */
+
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container1 h1 p{
+    color:#14d3e0;
+ 
+}
+
+.heading1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.technicalbars {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.bar i {
+    font-size: 40px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+.bar:hover i {
+    transform: rotate(360deg);
+}
+
+.info span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.progressline {
+    position: relative;
+    width: 70%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    
+
+}
+
+.progressline span {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    
+
+}
+.bar:hover .progressline span {
+    opacity: 1;
+}
+
+.progressline.html::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 90%;
+    background-color: orangered;
+    border-radius: 5px;
+    animation: fillProgress 2s ease-out;
+}
+
+
+.progressline.css::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 80%;
+    background-color: #14d3e0;
+    border-radius: 5px;
+    animation: fillProgress 2s ease-out;
+}
+.progressline.js::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 90%;
+    background-color: yellow;
+    border-radius: 5px;
+    animation: fillProgress 2s ease-out;
+}
+
+.progressline.react::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 80%;
+    background-color: #14d3e0;
+    border-radius: 5px;
+    animation: fillProgress 2s ease-out;
+}
+
+.progressline.python::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 90%;
+    background-color: #14d3e0;
+    border-radius: 5px;
+    animation: fillProgress 2s ease-out;
+}
+
+/* Animation for progress bars */
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--width);
+    }
+}
+
+
+
+
+
+/* Custom widths for each skill */
+.html span {
+    width: 90%; /* Example: HTML skill level */
+    background-color: orangered; /* HTML bar color */
+
+
+}
+
+.css span {
+    width: 80%; /* Example: CSS skill level */
+    background-color: #14d3e0; /* CSS bar color */
+}
+
+.js span {
+    width: 70%; /* Example: JavaScript skill level */
+    background-color: yellow; /* JavaScript bar color */
+    color: black; /* Contrast for yellow background */
+}
+
+.react span {
+    width: 85%; /* Example: React skill level */
+    background-color: #14d3e0; /* React bar color */
+}
+
+.python span {
+    width: 75%; /* Example: Python skill level */
+    background-color: #14d3e0; /* Python bar color */
+}
+
+
+/* -------------------- */
+
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.radialbars {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+.radialbars svg {
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+}
+
+.progressbar {
+    fill: none;
+    stroke: #2e2e4d;
+    stroke-width: 15;
+}
+
+ .path {
+    fill: none;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke-dasharray: 502; /* 2 * Math.PI * 80 */
+    stroke-dashoffset: 502;
+    animation: progress 2s ease-out forwards;
+    transition: stroke 0.3s ease;
+}
+
+.path-1 {
+    stroke: #6c63ff;
+}
+
+.percentage {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ .text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.radialbars:hover .path {
+    stroke: #f5a623;
+}
+.radialbars:hover .text {
+    color: #f5a623;
+}
+
+
+
+@keyframes progress {
+    0% {
+        stroke-dashoffset: 502;
+    }
+    100% {
+        stroke-dashoffset: calc(502 - (502 * 70) / 100); /* Replace 70 with the actual percentage value */
+    }
+}
+
+/* Specific animations for each skill percentage */
+.radialbars:nth-child(1) .path-1 {
+    animation: progress1 2s ease-out forwards;
+}
+
+.radialbars:nth-child(2) .path-1 {
+    animation: progress2 2s ease-out forwards;
+}
+
+.radialbars:nth-child(3) .path-1 {
+    animation: progress3 2s ease-out forwards;
+}
+
+.radialbars:nth-child(4) .path-1 {
+    animation: progress4 2s ease-out forwards;
+}
+
+@keyframes progress1 {
+    0% {
+        stroke-dashoffset: 502;
+    }
+    100% {
+        stroke-dashoffset: calc(502 - (502 * 70) / 100); /* 70% progress */
+    }
+}
+
+@keyframes progress2 {
+    0% {
+        stroke-dashoffset: 502;
+    }
+    100% {
+        stroke-dashoffset: calc(502 - (502 * 90) / 100); /* 90% progress */
+    }
+}
+
+@keyframes progress3 {
+    0% {
+        stroke-dashoffset: 502;
+    }
+    100% {
+        stroke-dashoffset: calc(502 - (502 * 80) / 100); /* 80% progress */
+    }
+}
+
+@keyframes progress4 {
+    0% {
+        stroke-dashoffset: 502;
+    }
+    100% {
+        stroke-dashoffset: calc(502 - (502 * 90) / 100); /* 90% progress */
+    }
+}
+
+
+
+
+
+@keyframes animatebar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dashoffset: 582;
+    stroke-dashoffset: 582;
+    stroke-linecap: round;
+}
+.path1{animation: animatepath1 1s 1s linear forwards;}
+.path2{animation: animatepath2 1s 1s linear forwards;}
+.path3{animation: animatepath3 1s 1s linear forwards;}
+.path4{animation: animatepath4 1s 1s linear forwards;}
+
+@keyframes animatepath1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animatepath2{
+    100%{
+        stroke-dashoffset: 175;
+    }
+}   
+@keyframes animatepath3{
+    100%{
+        stroke-dashoffset: 125;
+    }
+}  
+@keyframes animatepath4{
+    100%{
+        stroke-dashoffset: 75;
+    }
+}  
+/* .radialbar.pecentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 0.5s 1s linear forwards;
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+
+    }
+}
+
+
+
+
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+    background-image: url(./images/last.png.png);
+}
+
+.projects .subtitle {
+    text-align: center;
+    font-size:40px;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+.projects .project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projects .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.projects .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.projects .card:hover img {
+    transform: scale(1.1);
+}
+
+.projects .card h2 {
+    font-size: 24px;
+    margin: 15px;
+    color: #333;
+}
+
+.projects .card p {
+    font-size: 16px;
+    margin: 15px;
+    color: #666;
+}
+
+.projects .card .btnbox {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    padding: 10px 0;
+    background-color: #14d3e0;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.projects .card .btnbox:hover {
+    background-color: #0aa9b1;
+}
+
+
+
+
+/* work experience  */
+.work-experience {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.work-experience .subtitle {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.experience-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience-cards .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.experience-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.2);
+}
+
+.experience-cards .card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #0ef;
+}
+
+.experience-cards .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience-cards .card .duration {
+    display: block;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+.experience-cards .card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+    top: 10px;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: #2e2e4d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-content:hover {
+    background-color: #6c63ff;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+h3 {
+    margin: 5px 0 15px 0;
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-dot {
+        left: -10px;
+    }
+}
+
+
+
+
+
+
+
+
+/* -------------- */
+/* FOOTER */
+/* Footer Styles */
+.footer {
+    background-color: rgba(8,27,41,255);
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+    color: #fff;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-content .social-icons {
+    margin-top: 10px;
+}
+
+.footer-content .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-content .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Animation */
+.footer {
+    animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
