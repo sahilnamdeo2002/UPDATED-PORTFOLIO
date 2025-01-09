@@ -83,7 +83,7 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(./images/background.png.jpg) no-repeat;
+    background: url(./images/background.png.jpg) no-repeat; /* background image */
     background-size: cover;
     background-position: center;
     display: flex;
